@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.exampledtse.universitypushkit">
 
-    <meta-data
-        android:name="push_kit_auto_init_enabled"
-        android:value="true"/>
-
 
     <application
         android:allowBackup="true"
@@ -22,13 +18,13 @@
             </intent-filter>
         </activity>
         <!-- TODO (6): Registrar servicio en el Manifesto-->
-        <service
+        <!--<service
             android:name=".HmsPushService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
             </intent-filter>
-        </service>
+        </service>-->
     </application>
 
 </manifest>
